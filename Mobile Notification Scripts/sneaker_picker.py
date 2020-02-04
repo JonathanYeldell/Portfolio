@@ -14,8 +14,8 @@ import schedule
 from twilio.rest import Client
 final_sneaker_list = []
 
-account_sid = "ACf5e008186ee5b6359b95794fbb6d2898"
-auth_token = "89013053222d7b00129e0f90f26f6d60"
+account_sid = ""
+auth_token = ""
 
 client = Client(account_sid, auth_token)
 
@@ -35,8 +35,8 @@ def notifications(sneaker):
     message = client.messages \
         .create(
              body='Hello Jonathan, wear this today: ' + str(sneaker) + '!',
-             from_='+12039025254',
-             to='+13018288246'
+             from_='phone number',
+             to='phone number'
          )
 
 #CURRENRTLY WORKING ON THIS SECTION FOR CONSISTENTLY SCHEDULING THE SCTIPT TO EXECUTE#
