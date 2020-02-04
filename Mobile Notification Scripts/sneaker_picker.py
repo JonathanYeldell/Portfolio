@@ -39,6 +39,7 @@ def notifications(sneaker):
              to='+13018288246'
          )
 
+#CURRENRTLY WORKING ON THIS SECTION FOR CONSISTENTLY SCHEDULING THE SCTIPT TO EXECUTE#
 def main(file):
     sneaker = sneaker_ranomizer(file)
     notifications(sneaker)
